@@ -1,5 +1,10 @@
 package jeckelmilkmod.content;
 
+import jeckelmilkmod.content.milk.BlockMilk;
+import jeckelmilkmod.content.milk.FluidMilk;
+import jeckelmilkmod.content.milk.ItemBlockMilk;
+import jeckelmilkmod.content.milk.ItemMilkBottle;
+import jeckelmilkmod.core.BucketHandler;
 import jeckelmilkmod.core.Refs;
 import net.minecraft.block.Block;
 import net.minecraft.init.Items;
@@ -31,7 +36,7 @@ public class ContentManager
 
 	public void pre()
 	{
-		ModFluids.milk_fluid = new Fluid("milk").setDensity(1030);
+		ModFluids.milk_fluid = new FluidMilk();
 		final boolean result = FluidRegistry.registerFluid(ModFluids.milk_fluid);
 
 		if (!result) { Refs.getLogger().warn("Mod Disabled: Milk Fluid already registered."); }
@@ -40,7 +45,7 @@ public class ContentManager
 			final FluidStack stackMilk = FluidRegistry.getFluidStack("milk", FluidContainerRegistry.BUCKET_VOLUME);
 
 			ModBlocks.milk_block = new BlockMilk(ModFluids.milk_fluid);
-			GameRegistry.registerBlock(ModBlocks.milk_block, ModBlocks.milk_block.getUnlocalizedName().substring(5));
+			GameRegistry.registerBlock(ModBlocks.milk_block, ItemBlockMilk.class, ModBlocks.milk_block.getUnlocalizedName().substring(5));
 
 			ModItems.milk_bottle = new ItemMilkBottle();
 			GameRegistry.registerItem(ModItems.milk_bottle, ModItems.milk_bottle.getUnlocalizedName().substring(5));

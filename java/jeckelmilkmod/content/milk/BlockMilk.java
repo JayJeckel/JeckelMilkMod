@@ -1,5 +1,6 @@
-package jeckelmilkmod.content;
+package jeckelmilkmod.content.milk;
 
+import jeckelmilkmod.content.ContentManager;
 import jeckelmilkmod.core.Refs;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -22,10 +23,7 @@ public class BlockMilk extends BlockFluidClassic
 			this.setBlockName("milk_block");
 	}
 
-	@Override public IIcon getIcon(int side, int meta)
-	{
-			return (side == 0 || side == 1 ? this.stillIcon : this.flowIcon);
-	}
+	@Override public IIcon getIcon(int side, int meta) { return (side == 0 || side == 1 ? this.stillIcon : this.flowIcon); }
 
 	@SideOnly(Side.CLIENT)
 	@Override public void registerBlockIcons(IIconRegister register)

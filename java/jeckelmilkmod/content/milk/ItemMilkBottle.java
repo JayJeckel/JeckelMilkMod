@@ -1,4 +1,4 @@
-package jeckelmilkmod.content;
+package jeckelmilkmod.content.milk;
 
 import jeckelmilkmod.core.Refs;
 import net.minecraft.creativetab.CreativeTabs;
