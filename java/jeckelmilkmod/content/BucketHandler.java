@@ -1,4 +1,4 @@
-package jeckelmilkmod.core;
+package jeckelmilkmod.content;
 
 import java.util.HashMap;
 import java.util.Map;

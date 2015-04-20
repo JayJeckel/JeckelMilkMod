@@ -24,22 +24,13 @@ public class JeckelMilkMod
 	public JeckelMilkMod() { }
 
 	@Mod.EventHandler
-	public void preInitialize(FMLPreInitializationEvent event)
-	{
-		Refs.pre(INSTANCE, event);
-	}
+	public void preInitialize(FMLPreInitializationEvent event) { Refs.pre(INSTANCE, event); }
 
 	@Mod.EventHandler
-	public void initialize(FMLInitializationEvent event)
-	{
-		Refs.initialize(event);
-	}
+	public void initialize(FMLInitializationEvent event) { Refs.initialize(event); }
 
 	@Mod.EventHandler
-	public void postInitialization(FMLPostInitializationEvent event)
-	{
-		Refs.post(event);
-	}
+	public void postInitialization(FMLPostInitializationEvent event) { Refs.post(event); }
 
 	@EventHandler
 	public void onServerStarting(FMLServerStartingEvent event)

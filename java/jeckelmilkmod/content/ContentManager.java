@@ -4,7 +4,6 @@ import jeckelmilkmod.content.milk.BlockMilk;
 import jeckelmilkmod.content.milk.FluidMilk;
 import jeckelmilkmod.content.milk.ItemBlockMilk;
 import jeckelmilkmod.content.milk.ItemMilkBottle;
-import jeckelmilkmod.core.BucketHandler;
 import jeckelmilkmod.core.Refs;
 import net.minecraft.block.Block;
 import net.minecraft.init.Items;
