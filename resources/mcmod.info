@@ -5,7 +5,7 @@
 		{
 			"modid": "jeckelmilkmod",
 			"name": "JeckelMilkMod",
-			"description": "JeckelMilkMod implements milk as a custom fluid and allowing it to be used in fluid systems, similar to water and lava.",
+			"description": "JeckelMilkMod implements milk as a custom fluid, allowing it to be used in fluid systems, similar to water and lava.",
 			"version": "${version}",
 			"mcversion": "${mcversion}",
 			"forgeversion": "${forgeversion}",
