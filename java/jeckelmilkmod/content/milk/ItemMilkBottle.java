@@ -26,7 +26,7 @@ public class ItemMilkBottle extends Item
 	public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player)
 	{
 		if (!player.capabilities.isCreativeMode) { --stack.stackSize; }
-		if (!world.isRemote) { player.curePotionEffects(stack); }
+		if (!world.isRemote) { player.curePotionEffects(new ItemStack(Items.milk_bucket)); }
 		return (stack.stackSize <= 0 ? new ItemStack(Items.glass_bottle) : stack);
 	}
 
