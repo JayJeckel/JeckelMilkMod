@@ -50,7 +50,11 @@ public class ContentManager
 			GameRegistry.registerItem(ModItems.milk_bottle, ModItems.milk_bottle.getUnlocalizedName().substring(5));
 
 			FluidContainerRegistry.registerFluidContainer(stackMilk, new ItemStack(Items.milk_bucket), new ItemStack(Items.bucket));
-			FluidContainerRegistry.registerFluidContainer(stackMilk, new ItemStack(ModItems.milk_bottle), new ItemStack(Items.glass_bottle));
+
+			if (Refs.getConfigValues().isMilkBottleEnabled())
+			{
+				FluidContainerRegistry.registerFluidContainer(stackMilk, new ItemStack(ModItems.milk_bottle), new ItemStack(Items.glass_bottle));
+			}
 
 			BucketHandler.INSTANCE.buckets.put(ModBlocks.milk_block, Items.milk_bucket);
 			MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
