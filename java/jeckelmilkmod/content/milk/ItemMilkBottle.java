@@ -19,7 +19,7 @@ public class ItemMilkBottle extends Item
 	{
 		this.setUnlocalizedName("milk_bottle");
 		this.setTextureName(Refs.ModId + ":" + this.getUnlocalizedName().substring(5));
-		this.setCreativeTab(CreativeTabs.tabBrewing);
+		this.setCreativeTab(CreativeTabs.tabMisc);
 		this.setMaxDamage(16);
 	}
 
