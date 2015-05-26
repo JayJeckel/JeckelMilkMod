@@ -28,7 +28,7 @@ mod.setProperty("forgeversion", "10.13.2.1291")
 
 mod.setProperty("id", "jeckelmilkmod")
 mod.setProperty("name", "JeckelMilkMod")
-mod.setProperty("version", "1.1.0-beta")
+mod.setProperty("version", "1.2.0")
 
 minecraft { version = mod.mcversion + "-" + mod.forgeversion }
 version = mod.version
